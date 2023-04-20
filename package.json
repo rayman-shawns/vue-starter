@@ -1,53 +1,46 @@
 {
-  "name": "vite_temp",
+  "name": "bw_mobile_v3",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint --ext .js,.vue .",
-    "lint:fix": "eslint --ext --fix .js,.vue ."
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "cube-ui": "^1.12.49",
-    "vue": "^2.6.14",
-    "vue-router": "^3.5.1",
-    "vuex": "^3.6.2"
+    "@vueuse/core": "^10.0.2",
+    "amfe-flexible": "^2.2.1",
+    "animate.css": "^4.1.1",
+    "pinia": "^2.0.34",
+    "postcss-pxtorem": "^6.0.0",
+    "vant": "^4.2.0",
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/eslint-parser": "^7.21.3",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@vitejs/plugin-vue": "^4.1.0",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-vue": "^9.11.0",
     "postcss": "^8.4.22",
     "prettier": "^2.8.7",
-    "sass": "^1.62.0",
-    "stylus": "^0.59.0",
     "tailwindcss": "^3.3.1",
+    "typescript": "^5.0.4",
+    "unplugin-auto-import": "^0.15.3",
+    "unplugin-vue-components": "^0.24.1",
     "vite": "^4.2.0",
     "vite-plugin-eslint": "^1.8.1",
-    "vite-plugin-vue2": "^2.0.3",
-    "vue-template-compiler": "^2.7.14",
-    "webpack-post-compile-plugin": "^1.2.3",
-    "webpack-transform-modules-plugin": "^0.4.4"
-  },
-  "transformModules": {
-    "cube-ui": {
-      "transform": "cube-ui/lib/${member}",
-      "kebabCase": true,
-      "style": {
-        "ignore": [
-          "create-api",
-          "better-scroll",
-          "locale"
-        ]
-      }
-    }
+    "vue-tsc": "^1.2.0"
   }
 }
