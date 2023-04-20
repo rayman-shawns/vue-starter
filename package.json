@@ -1,0 +1,53 @@
+{
+  "name": "vite_temp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .js,.vue .",
+    "lint:fix": "eslint --ext --fix .js,.vue ."
+  },
+  "dependencies": {
+    "cube-ui": "^1.12.49",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/eslint-parser": "^7.21.3",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.11.0",
+    "postcss": "^8.4.22",
+    "prettier": "^2.8.7",
+    "sass": "^1.62.0",
+    "stylus": "^0.59.0",
+    "tailwindcss": "^3.3.1",
+    "vite": "^4.2.0",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-vue2": "^2.0.3",
+    "vue-template-compiler": "^2.7.14",
+    "webpack-post-compile-plugin": "^1.2.3",
+    "webpack-transform-modules-plugin": "^0.4.4"
+  },
+  "transformModules": {
+    "cube-ui": {
+      "transform": "cube-ui/lib/${member}",
+      "kebabCase": true,
+      "style": {
+        "ignore": [
+          "create-api",
+          "better-scroll",
+          "locale"
+        ]
+      }
+    }
+  }
+}
