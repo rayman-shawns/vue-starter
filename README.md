@@ -301,3 +301,24 @@ npm i -D eslint-plugin-prettier // eslint的prettier
 git config --global core.autocrlf false
 
 ```
+
+# postcss-px2rem
+```
+npm i amfe-flexible -D
+npm i postcss-pxtorem -D
+
+```
+- postcss.config.js
+```js
+'postcss-pxtorem': {
+    rootValue: 37.5,
+    propList: ['*'],
+    unitPrecision: 5
+}
+
+```
+- main.js
+```js
+import 'amfe-flexible'
+
+```

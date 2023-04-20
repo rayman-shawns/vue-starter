@@ -6,6 +6,7 @@ import router from './router'
 import store from './store'
 import 'cube-ui/lib/cube.min.css'
 import Cube from 'cube-ui'
+import 'amfe-flexible'
 
 Vue.use(Cube)
 
